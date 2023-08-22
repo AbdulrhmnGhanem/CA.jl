@@ -18,6 +18,7 @@ PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 [compat]
 Plots = "1"
 ControlSystemsBase = "1"
+CairoMakie = "0.10"
 julia = "1.9"
 
 [extras]
