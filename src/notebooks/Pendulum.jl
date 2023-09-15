@@ -15,12 +15,12 @@ end
 begin
 	using ModelingToolkit, DifferentialEquations, CairoMakie, PlutoUI
 	using ModelingToolkitStandardLibrary.Mechanical.MultiBody2D
-	using ModelingToolkitStandardLibrary.Mechanical.Translational
+	using ModelingToolkitStandardLibrary.Mechanical.TranslationalPosition
 	using Makie.GeometryBasics
 end
 
 # ╔═╡ cd833817-084b-4411-afb9-14607b3f3cbc
-md"# Reversed Pendulum Model"
+md"# Inverted Pendulum Model"
 
 # ╔═╡ 2f6c7627-7283-4f57-bbe4-e2cec75de3b5
 md"## Normal pendulum"
@@ -37,7 +37,7 @@ begin
 	
 	@named link = Link(; m = 0.1, l = l, I = I_pendulum, g = -g)
 	@named ball = Mass(; m = m_ball, s = 0)
-	@named fixed = Translational.Fixed()
+	@named fixed = TranslationalPosition.Fixed()
 	
 	eqs = [
 	    ModelingToolkit.connect(link.TX1, ball.flange),
@@ -194,9 +194,9 @@ end
 # ╟─2f6c7627-7283-4f57-bbe4-e2cec75de3b5
 # ╠═fa6232f2-70d7-4d91-997b-d3197c863264
 # ╠═7f6b5676-32b8-4ef2-a292-f0df1fba3765
-# ╠═5597c8e6-9350-41e9-b3b3-ac9c344185e1
+# ╟─5597c8e6-9350-41e9-b3b3-ac9c344185e1
 # ╠═a5532a80-3e25-4653-a8b7-84c63dcf1d4a
 # ╟─8e7b2555-a969-455f-b25d-bee26065eef3
-# ╠═bf64c002-8443-4df8-9350-dceb08ce7751
+# ╟─bf64c002-8443-4df8-9350-dceb08ce7751
 # ╠═9406380c-8552-4b8b-b342-2bbc2de8e4b9
 # ╠═a0dda65e-730b-46c3-93b2-760778741c0e
