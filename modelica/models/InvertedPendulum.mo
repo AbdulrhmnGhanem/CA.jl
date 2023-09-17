@@ -55,21 +55,21 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
       annotation(Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Ellipse(visible = true, lineColor = {75, 138, 73}, fillColor = {255, 255, 255}, fillPattern = FillPattern.Solid, extent = {{-100, -100}, {100, 100}}), Polygon(visible = true, lineColor = {0, 0, 255}, fillColor = {75, 138, 73}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, points = {{-36, 60}, {64, 0}, {-36, -60}, {-36, 60}})}), Documentation(info = "<html><!--WSMINSERTIONTAGSTART InvertedPendulum.Components.BasePendulumModel -->
    <head>
    <style type=\"text/css\">
-   
+
   body {
    padding: 0px;
    margin: 0px;
   }
-  
+
   a {
    color: #cf1d24;
   }
-  
+
   a.target {
    padding-top: 40px;
    margin-top: -40px;
   }
-  
+
   p {
    font-family: arial;
    font-size: 13;
@@ -78,7 +78,7 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    color: #555555;
    max-width: 800px;
   }
-  
+
   h1 {
    font-size: 30;
    color: #cf1d24;
@@ -89,7 +89,7 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    margin-right: 20px;
    padding-top: 0px;
   }
-  
+
   h2 {
    font-size: 20;
    color: #cf1d24;
@@ -99,7 +99,7 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    margin-top: 5px;
    margin-bottom: 9px;
   }
-  
+
   h3 {
    background: url('DocumentationFiles/dingbat3.png') no-repeat 0 0;
    font-size: 14px;
@@ -112,7 +112,7 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    margin-top: 12px;
    margin-bottom: 8px;
   }
-  
+
   ul {
    font-family: arial;
    font-size: 13;
@@ -122,7 +122,7 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    max-width: 800px;
    list-style-type: square;
   }
-  
+
   li {
    margin-left: 0px;
    margin-top: 4px;
@@ -136,7 +136,7 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    margin-top: 35px;
    background-color: #871613;
   }
-  
+
   .headerspan {
    font-family: arial;
    text-decoration: none;
@@ -149,7 +149,7 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    margin: 0px;
    margin-left: 20px;
   }
-  
+
   .headera {
    font-family: arial;
    text-decoration: none;
@@ -160,7 +160,7 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    vertical-align: middle;
    margin: 0px;
   }
-  
+
   .headerlinkdiv {
    background: black;
    padding: 0px;
@@ -168,7 +168,7 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    margin: 0px;
    position: fixed; top: 0px; left: 0px; width: 100%;
   }
-  
+
   .contenttable {
    -webkit-box-shadow: 3px 3px 3px #DDDDDD;
    border-top: 3px solid #cf1d24;
@@ -177,45 +177,45 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    margin: 15px 15px 0px 20px;
    padding: 6px 10px 3px 10px;
   }
-  
+
   .contenttableheader {
    color: #a4a4a4;
    font-size: 14px;
    font-family: arial;
   }
-  
+
   .contenttabletable {
    border: 0px solid #FFFFFF;
    padding: 0px;
    padding-left: 20px;
   }
-  
+
   .contenttable tr td {
    padding: 3px;
    min-width: 200px;
   }
-  
+
   .contenttable tr td a {
    color: #555555;
    text-decoration: none;
    font-size: 13px;
    font-family: arial;
   }
-  
+
   .hacek {
    color: #cf1d24;
    font-size: 25px;
    font-weight: plain;
    vertical-align: -40%;
   }
-  
+
   .mathematicapointerwrapper {
    border: 0px solid #DDDDDD;
    margin: 15px 15px 15px 40px;
    padding: 0px;
    max-width: 500px;
   }
-  
+
   .mathematicapointertop {
    border: 1px solid #DDDDDD;
    background-color: #F2F2F2;
@@ -223,7 +223,7 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    max-width: 500px;
    height: 4px;
   }
-  
+
   .mathematicapointerdiv {
    background: url('./DocumentationFiles/mathematicabook.png') no-repeat  left center;
    border: 1px solid #DDDDDD;
@@ -233,13 +233,13 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    max-width: 500px;
    min-height: 67px;
   }
-  
+
   p.mathematicapointer {
    padding: 0px;
    margin: 0px;
    font-size: 12px;
   }
-  
+
   .infoboxwrapper {
    border: 0px solid #DDDDDD;
    -webkit-box-shadow: 3px 3px 3px #DDDDDD;
@@ -247,7 +247,7 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    padding: 0px;
    max-width: 500px;
   }
-  
+
   .infoboxtop {
    background: url('./DocumentationFiles/infotick.png') no-repeat left center;
    border: 1px solid #DDDDDD;
@@ -256,7 +256,7 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    max-width: 500px;
    height: 37px;
   }
-  
+
   div.infobox {
    border: 1px solid #DDDDDD;
    background-color: #FFFFFF;
@@ -264,13 +264,13 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    padding: 15px;
    max-width: 500px;
   }
-  
+
   p.infobox {
    padding: 0px;
    margin: 0px;
    font-size: 12px;
   }
-  
+
   h2.legal {
    font-family: arial;
    font-size: 14;
@@ -278,7 +278,7 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    margin: 15px 15px 15px 20px;
    font-weight: bold;
   }
-  
+
   h3.legal {
    background: url('./DocumentationFiles/dingbat3.png') no-repeat 0 0;
    font-family: arial;
@@ -288,14 +288,14 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    padding-left: 12px;
    font-weight: bold;
   }
-  
+
   ul.legal {
    font-size: 10px;
    font-family: arial;
    color: #555555;
    margin-left: 28px;
   }
-  
+
   ul.legal li {
    margin-left: 0px;
    margin-top: 4px;
@@ -310,38 +310,38 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    padding-left: 30px;
    list-style-type: none;
   }
-  
+
   p.legallarge {
    font-size: 12px;
    margin-left: 38px;
   }
-  
+
   p.legalsmall {
    font-size: 11px;
    margin-left: 38px;
    padding-left: 12px;
   }
-  
+
   .legalend {
    height: 10px;
   }
-  
+
   .variablename {
    font-family: Courier New, Courier;
   }
-  
+
   .dialogelement {
    font-weight: bold;
   }
-  
+
   .menuitem {
    font-weight: bold;
   }
-  
+
   .mr {
    font-family: Courier New, Courier;
   }
-  
+
   .ttable {
 	border-collapse: collapse;
     width: 100%;
@@ -356,13 +356,13 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
 	.ttable tr:nth-child(even) {
 		background-color: #dddddd;
 	}
-  
+
    </style>
    </head>
    <body>
-   
+
   <div class=\"headerlinkdiv\">
-  
+
    <span class=\"headerspan\" style=\"background: url(DocumentationFiles/examples.png) no-repeat 0 0;
    padding-left: 24px;
    \"
@@ -374,7 +374,7 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    	this.style.color = 'gray';
    	this.style.background = 'url(DocumentationFiles/examples.png) no-repeat 0 0';
    \"><a href=\"https://www.wolfram.com/system-modeler/examples/\" class=\"headera\">More Examples</a></span>
-  
+
    <span class=\"headerspan\" style=\"background: url(DocumentationFiles/video.png) no-repeat 0 0;
    padding-left: 29px;
    \"
@@ -386,7 +386,7 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    	this.style.color = 'gray';
    	this.style.background = 'url(DocumentationFiles/video.png) no-repeat 0 0';
    \"><a href=\"http://www.wolfram.com/system-modeler/resources/get-started/\" class=\"headera\">Introductory Videos</a></span>
-  
+
    <span class=\"headerspan\" style=\"background: url(DocumentationFiles/docs.png) no-repeat 0 0;
    padding-left: 20px;
    \"
@@ -398,7 +398,7 @@ package InvertedPendulum "Example of a linnear quadratic regulator used to stabi
    	this.style.color = 'gray';
    	this.style.background = 'url(DocumentationFiles/docs.png) no-repeat 0 0';
    \"><a href=\"http://reference.wolfram.com/system-modeler\" class=\"headera\">Documentation</a></span>
-  
+
    <span class=\"headerspan\" style=\"background: url(DocumentationFiles/contact.png) no-repeat 0 0;
    padding-left: 24px;
    \"
@@ -444,21 +444,21 @@ The full legal code can be found at:<br>
     annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART InvertedPendulum.Components -->
    <head>
    <style type=\"text/css\">
-   
+
   body {
    padding: 0px;
    margin: 0px;
   }
-  
+
   a {
    color: #cf1d24;
   }
-  
+
   a.target {
    padding-top: 40px;
    margin-top: -40px;
   }
-  
+
   p {
    font-family: arial;
    font-size: 13;
@@ -467,7 +467,7 @@ The full legal code can be found at:<br>
    color: #555555;
    max-width: 800px;
   }
-  
+
   h1 {
    font-size: 30;
    color: #cf1d24;
@@ -478,7 +478,7 @@ The full legal code can be found at:<br>
    margin-right: 20px;
    padding-top: 0px;
   }
-  
+
   h2 {
    font-size: 20;
    color: #cf1d24;
@@ -488,7 +488,7 @@ The full legal code can be found at:<br>
    margin-top: 5px;
    margin-bottom: 9px;
   }
-  
+
   h3 {
    background: url('DocumentationFiles/dingbat3.png') no-repeat 0 0;
    font-size: 14px;
@@ -501,7 +501,7 @@ The full legal code can be found at:<br>
    margin-top: 12px;
    margin-bottom: 8px;
   }
-  
+
   ul {
    font-family: arial;
    font-size: 13;
@@ -511,7 +511,7 @@ The full legal code can be found at:<br>
    max-width: 800px;
    list-style-type: square;
   }
-  
+
   li {
    margin-left: 0px;
    margin-top: 4px;
@@ -525,7 +525,7 @@ The full legal code can be found at:<br>
    margin-top: 35px;
    background-color: #871613;
   }
-  
+
   .headerspan {
    font-family: arial;
    text-decoration: none;
@@ -538,7 +538,7 @@ The full legal code can be found at:<br>
    margin: 0px;
    margin-left: 20px;
   }
-  
+
   .headera {
    font-family: arial;
    text-decoration: none;
@@ -549,7 +549,7 @@ The full legal code can be found at:<br>
    vertical-align: middle;
    margin: 0px;
   }
-  
+
   .headerlinkdiv {
    background: black;
    padding: 0px;
@@ -557,7 +557,7 @@ The full legal code can be found at:<br>
    margin: 0px;
    position: fixed; top: 0px; left: 0px; width: 100%;
   }
-  
+
   .contenttable {
    -webkit-box-shadow: 3px 3px 3px #DDDDDD;
    border-top: 3px solid #cf1d24;
@@ -566,45 +566,45 @@ The full legal code can be found at:<br>
    margin: 15px 15px 0px 20px;
    padding: 6px 10px 3px 10px;
   }
-  
+
   .contenttableheader {
    color: #a4a4a4;
    font-size: 14px;
    font-family: arial;
   }
-  
+
   .contenttabletable {
    border: 0px solid #FFFFFF;
    padding: 0px;
    padding-left: 20px;
   }
-  
+
   .contenttable tr td {
    padding: 3px;
    min-width: 200px;
   }
-  
+
   .contenttable tr td a {
    color: #555555;
    text-decoration: none;
    font-size: 13px;
    font-family: arial;
   }
-  
+
   .hacek {
    color: #cf1d24;
    font-size: 25px;
    font-weight: plain;
    vertical-align: -40%;
   }
-  
+
   .mathematicapointerwrapper {
    border: 0px solid #DDDDDD;
    margin: 15px 15px 15px 40px;
    padding: 0px;
    max-width: 500px;
   }
-  
+
   .mathematicapointertop {
    border: 1px solid #DDDDDD;
    background-color: #F2F2F2;
@@ -612,7 +612,7 @@ The full legal code can be found at:<br>
    max-width: 500px;
    height: 4px;
   }
-  
+
   .mathematicapointerdiv {
    background: url('./DocumentationFiles/mathematicabook.png') no-repeat  left center;
    border: 1px solid #DDDDDD;
@@ -622,13 +622,13 @@ The full legal code can be found at:<br>
    max-width: 500px;
    min-height: 67px;
   }
-  
+
   p.mathematicapointer {
    padding: 0px;
    margin: 0px;
    font-size: 12px;
   }
-  
+
   .infoboxwrapper {
    border: 0px solid #DDDDDD;
    -webkit-box-shadow: 3px 3px 3px #DDDDDD;
@@ -636,7 +636,7 @@ The full legal code can be found at:<br>
    padding: 0px;
    max-width: 500px;
   }
-  
+
   .infoboxtop {
    background: url('./DocumentationFiles/infotick.png') no-repeat left center;
    border: 1px solid #DDDDDD;
@@ -645,7 +645,7 @@ The full legal code can be found at:<br>
    max-width: 500px;
    height: 37px;
   }
-  
+
   div.infobox {
    border: 1px solid #DDDDDD;
    background-color: #FFFFFF;
@@ -653,13 +653,13 @@ The full legal code can be found at:<br>
    padding: 15px;
    max-width: 500px;
   }
-  
+
   p.infobox {
    padding: 0px;
    margin: 0px;
    font-size: 12px;
   }
-  
+
   h2.legal {
    font-family: arial;
    font-size: 14;
@@ -667,7 +667,7 @@ The full legal code can be found at:<br>
    margin: 15px 15px 15px 20px;
    font-weight: bold;
   }
-  
+
   h3.legal {
    background: url('./DocumentationFiles/dingbat3.png') no-repeat 0 0;
    font-family: arial;
@@ -677,14 +677,14 @@ The full legal code can be found at:<br>
    padding-left: 12px;
    font-weight: bold;
   }
-  
+
   ul.legal {
    font-size: 10px;
    font-family: arial;
    color: #555555;
    margin-left: 28px;
   }
-  
+
   ul.legal li {
    margin-left: 0px;
    margin-top: 4px;
@@ -699,38 +699,38 @@ The full legal code can be found at:<br>
    padding-left: 30px;
    list-style-type: none;
   }
-  
+
   p.legallarge {
    font-size: 12px;
    margin-left: 38px;
   }
-  
+
   p.legalsmall {
    font-size: 11px;
    margin-left: 38px;
    padding-left: 12px;
   }
-  
+
   .legalend {
    height: 10px;
   }
-  
+
   .variablename {
    font-family: Courier New, Courier;
   }
-  
+
   .dialogelement {
    font-weight: bold;
   }
-  
+
   .menuitem {
    font-weight: bold;
   }
-  
+
   .mr {
    font-family: Courier New, Courier;
   }
-  
+
   .ttable {
 	border-collapse: collapse;
     width: 100%;
@@ -745,13 +745,13 @@ The full legal code can be found at:<br>
 	.ttable tr:nth-child(even) {
 		background-color: #dddddd;
 	}
-  
+
    </style>
    </head>
    <body>
-   
+
   <div class=\"headerlinkdiv\">
-  
+
    <span class=\"headerspan\" style=\"background: url(DocumentationFiles/examples.png) no-repeat 0 0;
    padding-left: 24px;
    \"
@@ -763,7 +763,7 @@ The full legal code can be found at:<br>
    	this.style.color = 'gray';
    	this.style.background = 'url(DocumentationFiles/examples.png) no-repeat 0 0';
    \"><a href=\"https://www.wolfram.com/system-modeler/examples/\" class=\"headera\">More Examples</a></span>
-  
+
    <span class=\"headerspan\" style=\"background: url(DocumentationFiles/video.png) no-repeat 0 0;
    padding-left: 29px;
    \"
@@ -775,7 +775,7 @@ The full legal code can be found at:<br>
    	this.style.color = 'gray';
    	this.style.background = 'url(DocumentationFiles/video.png) no-repeat 0 0';
    \"><a href=\"http://www.wolfram.com/system-modeler/resources/get-started/\" class=\"headera\">Introductory Videos</a></span>
-  
+
    <span class=\"headerspan\" style=\"background: url(DocumentationFiles/docs.png) no-repeat 0 0;
    padding-left: 20px;
    \"
@@ -787,7 +787,7 @@ The full legal code can be found at:<br>
    	this.style.color = 'gray';
    	this.style.background = 'url(DocumentationFiles/docs.png) no-repeat 0 0';
    \"><a href=\"http://reference.wolfram.com/system-modeler\" class=\"headera\">Documentation</a></span>
-  
+
    <span class=\"headerspan\" style=\"background: url(DocumentationFiles/contact.png) no-repeat 0 0;
    padding-left: 24px;
    \"
@@ -848,21 +848,21 @@ The full legal code can be found at:<br>
     annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART InvertedPendulum.InvertedPendulumPulse -->
    <head>
    <style type=\"text/css\">
-   
+
   body {
    padding: 0px;
    margin: 0px;
   }
-  
+
   a {
    color: #cf1d24;
   }
-  
+
   a.target {
    padding-top: 40px;
    margin-top: -40px;
   }
-  
+
   p {
    font-family: arial;
    font-size: 13;
@@ -871,7 +871,7 @@ The full legal code can be found at:<br>
    color: #555555;
    max-width: 800px;
   }
-  
+
   h1 {
    font-size: 30;
    color: #cf1d24;
@@ -882,7 +882,7 @@ The full legal code can be found at:<br>
    margin-right: 20px;
    padding-top: 0px;
   }
-  
+
   h2 {
    font-size: 20;
    color: #cf1d24;
@@ -892,7 +892,7 @@ The full legal code can be found at:<br>
    margin-top: 5px;
    margin-bottom: 9px;
   }
-  
+
   h3 {
    background: url('DocumentationFiles/dingbat3.png') no-repeat 0 0;
    font-size: 14px;
@@ -905,7 +905,7 @@ The full legal code can be found at:<br>
    margin-top: 12px;
    margin-bottom: 8px;
   }
-  
+
   ul {
    font-family: arial;
    font-size: 13;
@@ -915,7 +915,7 @@ The full legal code can be found at:<br>
    max-width: 800px;
    list-style-type: square;
   }
-  
+
   li {
    margin-left: 0px;
    margin-top: 4px;
@@ -929,7 +929,7 @@ The full legal code can be found at:<br>
    margin-top: 35px;
    background-color: #871613;
   }
-  
+
   .headerspan {
    font-family: arial;
    text-decoration: none;
@@ -942,7 +942,7 @@ The full legal code can be found at:<br>
    margin: 0px;
    margin-left: 20px;
   }
-  
+
   .headera {
    font-family: arial;
    text-decoration: none;
@@ -953,7 +953,7 @@ The full legal code can be found at:<br>
    vertical-align: middle;
    margin: 0px;
   }
-  
+
   .headerlinkdiv {
    background: black;
    padding: 0px;
@@ -961,7 +961,7 @@ The full legal code can be found at:<br>
    margin: 0px;
    position: fixed; top: 0px; left: 0px; width: 100%;
   }
-  
+
   .contenttable {
    -webkit-box-shadow: 3px 3px 3px #DDDDDD;
    border-top: 3px solid #cf1d24;
@@ -970,45 +970,45 @@ The full legal code can be found at:<br>
    margin: 15px 15px 0px 20px;
    padding: 6px 10px 3px 10px;
   }
-  
+
   .contenttableheader {
    color: #a4a4a4;
    font-size: 14px;
    font-family: arial;
   }
-  
+
   .contenttabletable {
    border: 0px solid #FFFFFF;
    padding: 0px;
    padding-left: 20px;
   }
-  
+
   .contenttable tr td {
    padding: 3px;
    min-width: 200px;
   }
-  
+
   .contenttable tr td a {
    color: #555555;
    text-decoration: none;
    font-size: 13px;
    font-family: arial;
   }
-  
+
   .hacek {
    color: #cf1d24;
    font-size: 25px;
    font-weight: plain;
    vertical-align: -40%;
   }
-  
+
   .mathematicapointerwrapper {
    border: 0px solid #DDDDDD;
    margin: 15px 15px 15px 40px;
    padding: 0px;
    max-width: 500px;
   }
-  
+
   .mathematicapointertop {
    border: 1px solid #DDDDDD;
    background-color: #F2F2F2;
@@ -1016,7 +1016,7 @@ The full legal code can be found at:<br>
    max-width: 500px;
    height: 4px;
   }
-  
+
   .mathematicapointerdiv {
    background: url('./DocumentationFiles/mathematicabook.png') no-repeat  left center;
    border: 1px solid #DDDDDD;
@@ -1026,13 +1026,13 @@ The full legal code can be found at:<br>
    max-width: 500px;
    min-height: 67px;
   }
-  
+
   p.mathematicapointer {
    padding: 0px;
    margin: 0px;
    font-size: 12px;
   }
-  
+
   .infoboxwrapper {
    border: 0px solid #DDDDDD;
    -webkit-box-shadow: 3px 3px 3px #DDDDDD;
@@ -1040,7 +1040,7 @@ The full legal code can be found at:<br>
    padding: 0px;
    max-width: 500px;
   }
-  
+
   .infoboxtop {
    background: url('./DocumentationFiles/infotick.png') no-repeat left center;
    border: 1px solid #DDDDDD;
@@ -1049,7 +1049,7 @@ The full legal code can be found at:<br>
    max-width: 500px;
    height: 37px;
   }
-  
+
   div.infobox {
    border: 1px solid #DDDDDD;
    background-color: #FFFFFF;
@@ -1057,13 +1057,13 @@ The full legal code can be found at:<br>
    padding: 15px;
    max-width: 500px;
   }
-  
+
   p.infobox {
    padding: 0px;
    margin: 0px;
    font-size: 12px;
   }
-  
+
   h2.legal {
    font-family: arial;
    font-size: 14;
@@ -1071,7 +1071,7 @@ The full legal code can be found at:<br>
    margin: 15px 15px 15px 20px;
    font-weight: bold;
   }
-  
+
   h3.legal {
    background: url('./DocumentationFiles/dingbat3.png') no-repeat 0 0;
    font-family: arial;
@@ -1081,14 +1081,14 @@ The full legal code can be found at:<br>
    padding-left: 12px;
    font-weight: bold;
   }
-  
+
   ul.legal {
    font-size: 10px;
    font-family: arial;
    color: #555555;
    margin-left: 28px;
   }
-  
+
   ul.legal li {
    margin-left: 0px;
    margin-top: 4px;
@@ -1103,38 +1103,38 @@ The full legal code can be found at:<br>
    padding-left: 30px;
    list-style-type: none;
   }
-  
+
   p.legallarge {
    font-size: 12px;
    margin-left: 38px;
   }
-  
+
   p.legalsmall {
    font-size: 11px;
    margin-left: 38px;
    padding-left: 12px;
   }
-  
+
   .legalend {
    height: 10px;
   }
-  
+
   .variablename {
    font-family: Courier New, Courier;
   }
-  
+
   .dialogelement {
    font-weight: bold;
   }
-  
+
   .menuitem {
    font-weight: bold;
   }
-  
+
   .mr {
    font-family: Courier New, Courier;
   }
-  
+
   .ttable {
 	border-collapse: collapse;
     width: 100%;
@@ -1149,13 +1149,13 @@ The full legal code can be found at:<br>
 	.ttable tr:nth-child(even) {
 		background-color: #dddddd;
 	}
-  
+
    </style>
    </head>
    <body>
-   
+
   <div class=\"headerlinkdiv\">
-  
+
    <span class=\"headerspan\" style=\"background: url(DocumentationFiles/examples.png) no-repeat 0 0;
    padding-left: 24px;
    \"
@@ -1167,7 +1167,7 @@ The full legal code can be found at:<br>
    	this.style.color = 'gray';
    	this.style.background = 'url(DocumentationFiles/examples.png) no-repeat 0 0';
    \"><a href=\"https://www.wolfram.com/system-modeler/examples/\" class=\"headera\">More Examples</a></span>
-  
+
    <span class=\"headerspan\" style=\"background: url(DocumentationFiles/video.png) no-repeat 0 0;
    padding-left: 29px;
    \"
@@ -1179,7 +1179,7 @@ The full legal code can be found at:<br>
    	this.style.color = 'gray';
    	this.style.background = 'url(DocumentationFiles/video.png) no-repeat 0 0';
    \"><a href=\"http://www.wolfram.com/system-modeler/resources/get-started/\" class=\"headera\">Introductory Videos</a></span>
-  
+
    <span class=\"headerspan\" style=\"background: url(DocumentationFiles/docs.png) no-repeat 0 0;
    padding-left: 20px;
    \"
@@ -1191,7 +1191,7 @@ The full legal code can be found at:<br>
    	this.style.color = 'gray';
    	this.style.background = 'url(DocumentationFiles/docs.png) no-repeat 0 0';
    \"><a href=\"http://reference.wolfram.com/system-modeler\" class=\"headera\">Documentation</a></span>
-  
+
    <span class=\"headerspan\" style=\"background: url(DocumentationFiles/contact.png) no-repeat 0 0;
    padding-left: 24px;
    \"

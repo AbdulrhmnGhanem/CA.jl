@@ -34,18 +34,18 @@ begin
 	g = 9.81
 	l = 10  # Length of the pendulum
 	I_pendulum = (1/3) * m_link * l^2  # Moment of inertia of a thin rod about its end
-	
+
 	@named link = Link(; m = 0.1, l = l, I = I_pendulum, g = -g)
 	@named ball = Mass(; m = m_ball, s = 0)
 	@named fixed = TranslationalPosition.Fixed()
-	
+
 	eqs = [
 	    ModelingToolkit.connect(link.TX1, ball.flange),
 	    ModelingToolkit.connect(link.TY1, fixed.flange)
 	]
-	
+
 	@named model = ODESystem(eqs, t, [], [], systems = [link, ball, fixed])
-	
+
 	sys = structural_simplify(model)
 end;
 
@@ -136,7 +136,7 @@ function plot_slider_pendulum(sol, sys, tmax; filename)
 	Housing = Polygon(
 		Point2f[(-10.5, -0.5), (10.5, -0.5), (10.5, 0.5), (-10.5, 0.5)],
 		[Point2f[(-10.2, -0.2), (10.2, -0.2), (10.2, 0.2), (-10.2, 0.2)]]
-		
+
 	)
 	CairoMakie.poly!(Housing; color=1, colormap, colorrange)
 
@@ -151,8 +151,8 @@ function plot_slider_pendulum(sol, sys, tmax; filename)
     CairoMakie.scatter!(a, @lift([$m1x1]), @lift([$m1y1]);
 		markersize=40, color=[7], colormap, colorrange,
 	)
-	
-	
+
+
     CairoMakie.ylims!(a, -20, 5)
     CairoMakie.xlims!(a, -20, 20)
 
@@ -173,9 +173,9 @@ begin
 		    ModelingToolkit.connect(link.TX1, ball.flange),
 			ModelingToolkit.connect(link.TY2, fixed.flange),
 	]
-		
+
 	@named slider_penulum_model = ODESystem(slider_eqs, t, [], [], systems = [link, ball, fixed])
-	
+
 	slider_penulum = structural_simplify(slider_penulum_model)
 	prob_2 = ODEProblem(slider_penulum, unset_vars .=> 0, (0.0, 60), []; jac = true)
 	sol_2 = solve(prob_2)
