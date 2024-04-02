@@ -20,6 +20,12 @@
       ]
     }
   },
+  "containerEnv": {
+    "DISPLAY": "unix:0"
+  },
+  "mounts": [
+    "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached"
+  ],
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "julia --project=. -E \"using Pkg; Pkg.build()\""
 
